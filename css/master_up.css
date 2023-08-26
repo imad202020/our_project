@@ -1,0 +1,161 @@
+/* mobile */
+@media (max-width : 767px) {
+}
+/* Small screens */
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium screen */
+@media (min-width : 992px) {
+    .container {
+        width: 970;
+    }
+}
+/* Large screen */
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+:root {
+    --maincolor : #10cab7 ;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.signup {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #183153;
+    min-height: 100vh;
+}
+
+.signup .container {
+    margin:30px auto;
+}
+
+.signup .container .up {
+    text-align: center;
+}
+
+.signup .container .up .logo i ,
+.signup .container .up .logo p {
+    font-size: 40px;
+    font-weight: 800;
+    color: #10cab7;
+}
+
+.signup .container .down {
+    background-color: #EEE;
+    max-width: 700px;
+    min-height: 700px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.signup .container .down .pack:first-child div {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.signup .container .down .pack:first-child div h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #183153;
+}
+.signup .container .down .pack:first-child div p {
+    font-size: 18px;
+    color: rgba(68, 68, 68, 0.886);
+    font-weight: 500;
+}
+.signup .container .down .pack:last-child .hi {
+    padding: 15px;
+    margin-top: 10px;
+}
+.signup .container .down .pack:last-child .hi label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+.signup .container .down .pack:last-child .hi input {
+    padding: 9px 10px;
+    width: 300px;
+    background-color: rgb(198, 216, 234);
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid rgb(107, 176, 245) ;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+.signup .container .down .pack:last-child .hi input:focus {
+    border-color: #333 ;
+}
+.signup .container .down .pack:last-child .hi p {
+    color: rgb(255, 77, 77);
+}
+.signup .container .down .pack:last-child .rd {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid ;
+    grid-template-columns: auto 1fr;
+}
+.signup .container .down .pack:last-child .rd input {
+   width: 25px;
+   height: 25px;
+}
+.signup .container .down .pack:last-child .rd  label {
+    margin-left: 30px;
+    line-height: 1.6;
+}
+.signup .container .down .pack:last-child .wa  label span  , 
+.signup .container .down .pack:last-child .rd label span:first-child {
+    color: #183153;
+    font-weight: 600;
+}
+.signup .container .down .pack:last-child .fn  {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.signup .container .down .pack:last-child .fn input {
+    padding: 15px 23px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #183153;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.2s;
+}
+.signup .container .down .pack:last-child .fn input:hover {
+    background-color: #10cab7;
+    cursor: pointer;
+}
+@media (max-width : 830px) {
+    .signup .container .down {
+        width: 500px;
+    }
+}
+
+@media (max-width : 600px) {
+    .signup .container .down {
+        width: 370px;
+    }
+    .signup .container .down form {
+        text-align: center;
+    }
+    .signup .container .down .pack:last-child .rd  label {
+        margin-left: 15px;
+    }
+}

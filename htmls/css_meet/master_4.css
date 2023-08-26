@@ -1,0 +1,165 @@
+/* mobile */
+/* @media (max-width : 767px) {
+} */
+/* Small screens */
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium screen */
+@media (min-width : 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large screen */
+@media (min-width : 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+:root {
+    --maincolor : #10cab7 ;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.meet {
+    background-color: #eee;
+    width: 100%;
+    margin: auto;
+}
+.meet .container {
+    margin: auto;
+    /* width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    padding-bottom: 60px;
+}
+.meet .container .intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.meet .container .intro h2 ,
+.meet .container .intro p{
+    margin: auto;
+    text-align: center;
+}
+.meet .container .intro h2 {
+    font-size: 60px;
+    font-weight: 600;
+    padding: 10px 20px 25px 20px;
+    border-bottom: 2px solid #183153;
+    color: #183153;
+}
+.meet .container .intro p {
+    color: #1b3c69;
+    padding: 30px 30px 50px 30px;
+}
+.meet .container .down {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(330px , 1fr));
+    margin: auto;
+}
+.meet .container .down .pack  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    border: 2px #183153 solid;
+    border-radius: 20px;
+    background-color: #ddd;
+    overflow: hidden;
+    min-height: 660px;
+    padding-bottom: 30px;
+}
+ 
+.meet .container .down .pack img {
+    width: 100%;
+    background-size: cover;
+    height: 40%;
+    transition: 0.3s;
+}
+.meet .container .down .pack img:hover{
+    transform: scale(1.2);
+}
+.meet .container .down .pack div {
+    height: 50%;
+    margin-top: 12px;
+    padding: 20px;
+}
+.meet .container .down .pack div h3 ,
+.meet .container .down .pack div p:first-of-type {
+    text-align: center;
+    color: #183153;
+}
+.meet .container .down .pack div h3 {
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: #183153 1px solid;
+    padding-bottom: 20px;
+}
+.meet .container .down .pack div p:first-of-type {
+    font-size: 18px;
+}
+
+
+
+.footer {
+    background-color: #183153;
+    width: 100%;
+}
+.footer .container {
+    margin: auto;
+    width: 70%;
+    padding: 30px 20px;
+}
+.footer .container .socials {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.footer .container .socials i {
+    font-size: 40px;
+    color: #0a9f90;
+    font-weight: 700;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+.footer .container .socials i:hover {
+    color: #10cab7;
+    cursor: pointer;
+}
+.footer .container .one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container .one a {
+    color: #0a9f90;
+    font-size: 16px;
+    margin: 30px 15px;
+}
+.footer .container .one a:hover {
+    color: #10cab7;
+    cursor: pointer;
+}
+.footer .container p {
+    text-align: center;
+    color: #0a9f90;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+

@@ -1,0 +1,210 @@
+/* mobile */
+@media (max-width : 767px) {
+}
+/* Small screens */
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium screen */
+@media (min-width : 992px) {
+    .container {
+        width: 970;
+    }
+}
+/* Large screen */
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+:root {
+    --maincolor : #10cab7 ;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.home {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #183153;
+    min-height: 100vh;
+}
+.home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+.home .container .up {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 40px;
+    height: 20%;
+}
+.home .container .up .logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+}
+.home .container .up .logo i ,
+.home .container .up .logo p {
+    font-size: 40px;
+    font-weight: 800;
+    color: #10cab7;
+}
+.home .container .up .link {
+    position: relative;
+}
+.home .container .up .link i {
+    color: #0a9f90;
+    font-size: 30px;
+    display: none;
+}
+.home .container .up .link ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.home .container .up .link ul a{
+    text-decoration: none;
+    color: #0a9f90;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    margin-right: 17px;
+    border-bottom: transparent 2px solid;
+    transition: 0.2s;
+}
+.home .container .up .link ul li:hover a {
+    border-bottom-color: #10cab7;
+    color: #10cab7;
+    padding-bottom: 10px;
+    position: relative;
+}
+@media (max-width : 850px) {
+    .home .container .up .link i {
+        display: block;
+    }
+    .home .container .up .link ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        justify-content: center;
+        right: 0%;
+        min-width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    .home .container .up .link ul a {
+        border-bottom: none;
+        display: block;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    .home .container .up .link ul li:hover a {
+        padding-left: 20px;
+    }
+    .home .container .up .link:hover ul {
+        display: flex;
+    }
+    /* .home .container .up .link i { 
+    } */
+}
+.home .container .down {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.home .container .down h2 {
+    color: #10cab7;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    height: 30%;
+}
+.home .container .down p {
+    color: #EEE;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    height: 20%;
+}
+.home .container .down ul {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    height: 40%;
+    margin-top: 40px;
+}
+.home .container .down ul a {
+    text-decoration: none;
+    color: #EEE;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 20px 30px;
+    width: 20%;
+    border: #EEE 2px solid;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.home .container .down ul li a:hover {
+    background-color: #10cab7;
+}
+@media (max-width : 680px) {
+    .home .container .up .logo i ,
+    .home .container .up .logo p {
+    font-size: 25px;
+    }
+    .home .container .down h2 {
+        font-size: 35px;
+    }
+    .home .container .up .link li a {
+        font-size: 15px;
+        text-align: center;
+    }
+    .home .container .down p {
+        font-size: 16px;
+    }
+    .home .container .down ul {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 40%;
+        margin-top: 40px;
+    }
+    .home .container .down ul a {
+        font-size: 18px;
+        padding: 15px 23px;
+    }
+    .home .container .down ul li {
+        margin: 30px 0px;
+    }
+    .home .container .down {
+        margin-top: 80px ;
+    }
+}
+@media (max-width : 450px) {
+    .home .container .up .link li a {
+        text-align: right;
+    }
+}
+
+
+
+
